@@ -1,6 +1,5 @@
 // I'm using querySelector because I can change between class and ID and not affect my code
 
-
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
@@ -15,13 +14,13 @@ let questionCounter = 0;
 let availableQuestions = []
 
 
-var count = 30
+var count = 41
 var interval = setInterval(function () {
-    document.getElementById('timer').innerHTML = count;
     count--;
+    document.getElementById('timer').innerHTML = count;
  
+    if (count <= 0) {
 
-    if (count === -2) {
         clearInterval(interval);
         localStorage.setItem('mostRecentScore', score)
         window.location.assign('end.html');
@@ -139,10 +138,11 @@ choices.forEach(choice => {
         const selectedAnswer = selectedChoice.dataset['number']
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
-        if(classToApply === 'correct') {
+        if (classToApply === 'correct') {
         incrementScore(SCORE_POINTS)
+        } else {
+        count = count - 10
         }
-
         selectedChoice.parentElement.classList.add(classToApply)
 
         setTimeout(() => {
