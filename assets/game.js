@@ -15,6 +15,7 @@ let questionCounter = 0;
 let availableQuestions = []
 
 let questions = [
+    
     {
         question: 'How many soccer players should each team have on the field at the start of each match?',
         choice1: '10',
@@ -58,7 +59,7 @@ let questions = [
 ]
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
+const MAX_QUESTIONS = 5
 
 startGame = () => {
     questionCounter = 0
@@ -71,11 +72,11 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/end.html')
+        return window.location.assign('end.html')
     }
 
     questionCounter++
-    progressText.innerText = `Question ${questionCounter} of $(MAX_QUESTIONS)`
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) *100}%`
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
@@ -114,3 +115,11 @@ choices.forEach(choice => {
         }, 1000)
     })
 })
+
+incrementScore = num => {
+    score += num
+    scoreText.innerText = score
+
+}
+
+startGame()
