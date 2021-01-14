@@ -14,6 +14,33 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = []
 
+
+
+
+
+
+var count = 10;
+var interval = setInterval(function () {
+    document.getElementById('timer').innerHTML = count;
+    count--;
+ 
+
+    if (count === 0) {
+        clearInterval(interval);
+        localStorage.setItem('mostRecentScore', score)
+        window.location.assign('end.html');
+        // or...
+        alert("You're out of time!");
+    }
+
+    if (selectedAnswer === 'incorrect') {
+        count = count - 10;
+    }
+}, 1000);
+
+
+
+
 let questions = [
     
     {
@@ -102,7 +129,6 @@ choices.forEach(choice => {
         const selectedAnswer = selectedChoice.dataset['number']
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
-        console.log(selectedChoice);
         if(classToApply === 'correct') {
         incrementScore(SCORE_POINTS)
         }
