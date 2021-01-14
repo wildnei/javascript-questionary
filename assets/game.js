@@ -15,9 +15,7 @@ let questionCounter = 0;
 let availableQuestions = []
 
 
-
-
-var count = 10
+var count = 30
 var interval = setInterval(function () {
     document.getElementById('timer').innerHTML = count;
     count--;
@@ -35,8 +33,6 @@ var interval = setInterval(function () {
     //     count = count - 10;
     // }
 }, 1000);
-
-
 
 
 let questions = [
