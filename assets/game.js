@@ -17,15 +17,13 @@ let availableQuestions = []
 
 
 
-
-
-var count = 10;
+var count = 10
 var interval = setInterval(function () {
     document.getElementById('timer').innerHTML = count;
     count--;
  
 
-    if (count === 0) {
+    if (count === -2) {
         clearInterval(interval);
         localStorage.setItem('mostRecentScore', score)
         window.location.assign('end.html');
@@ -33,9 +31,9 @@ var interval = setInterval(function () {
         alert("You're out of time!");
     }
 
-    if (selectedAnswer === 'incorrect') {
-        count = count - 10;
-    }
+    // if (selectedAnswer === 'incorrect') {
+    //     count = count - 10;
+    // }
 }, 1000);
 
 
@@ -76,12 +74,28 @@ let questions = [
         answer: 1
     }, 
     {
-        question: '2. Which animal can be seen on the Porsche logo?',
+        question: 'Which animal can be seen on the Porsche logo?',
         choice1: 'Dog',
         choice2: 'Horse',
         choice3: 'Dragon',
         choice4: 'Chimera',
         answer: 2
+    }, 
+    {
+        question: 'How many Earths could fit inside the sun?',
+        choice1: '300',
+        choice2: '1,300',
+        choice3: '300,000',
+        choice4: '1,300,000',
+        answer: 4
+    }, 
+    {
+        question: 'Which country consumes the most chocolate per capita?',
+        choice1: 'United States',
+        choice2: 'Netherlands',
+        choice3: 'Switzerland',
+        choice4: 'France',
+        answer: 3
     }, 
 ]
 
@@ -96,7 +110,7 @@ startGame = () => {
 }
 
 getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+    if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
         return window.location.assign('end.html')
