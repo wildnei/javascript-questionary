@@ -10,15 +10,21 @@
 - [x] CSS
 - [x] FontAwesome
 - [x] Bootstrap
+- [x] jQuery
 
 
 # What I learned from this assignment 
 
+Improved ways to create my code in HTML setting classes and ID's all at once "#home.flex-colum.flex-center" press TAB.
+
+Learned new skills on how to better use "rem" as size on my CSS
+
+Improved my ability to work with if & else statement
+
+Improved my ability to find and fix errors also how improve the quality of the code on JavaScript
 
 
-
-
-# Change Log
+# Important Change Log for errors / bugs while reviewing the code
 
 - [x] Added Media Query for mobile version
 

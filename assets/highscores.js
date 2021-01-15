@@ -18,3 +18,4 @@ $("#clear").on("click", function (event) {
 $("#clear").on("click", function (event) {
     window.localStorage.clear();
 });
+
