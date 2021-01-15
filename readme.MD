@@ -1,9 +1,17 @@
-# How to play
+# How to play 🎮🎲
 
-## In this trivia game you have 40 seconds to answer 5 questions, every time you answer incorrectly your time is reduced by 10 seconds, when your time reaches zero = game over.
+ 📜 This is a TRIVIA GAME
+
+ ✏️ 5 questions
+ 
+ ⏰ 40 seconds to answer
+
+ ❌ Every incorrect answer = -10 seconds
+
+ ✔️	Every correct answer gives you 100 points 
 
 
-# Technologies used
+# Technologies used 
 
 - [x] HTML
 - [x] Javascript
