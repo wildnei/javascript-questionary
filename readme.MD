@@ -1,6 +1,6 @@
 # How to play
 
-* In this trivia game you have 40 seconds to answer 5 questions, every time you answer incorrectly your time is reduced by 10 seconds, when your time reaches zero = game over.
+## In this trivia game you have 40 seconds to answer 5 questions, every time you answer incorrectly your time is reduced by 10 seconds, when your time reaches zero = game over.
 
 
 # Technologies used
@@ -15,16 +15,16 @@
 
 # What I learned from this assignment 
 
-Improved ways to create my code in HTML setting classes and ID's all at once "#home.flex-colum.flex-center" press TAB.
+* Improved ways to create my code in HTML setting classes and ID's all at once "#home.flex-colum.flex-center" press TAB.
 
-Learned new skills on how to better use "rem" as size on my CSS
+* Learned new skills on how to better use "rem" as size on my CSS
 
-Improved my ability to work with if & else statement
+* Improved my ability to work with if & else statement
 
-Improved my ability to find and fix errors also how improve the quality of the code on JavaScript
+* Improved my ability to find and fix errors also how improve the quality of the code on JavaScript
 
 
-# Important Change Log for errors / bugs while reviewing the code
+## Important Change Log for errors / bugs while reviewing the code
 
 - [x] Added Media Query for mobile version
 
