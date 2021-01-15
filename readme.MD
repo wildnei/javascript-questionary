@@ -31,7 +31,7 @@
 
 * Improved my ability to find and fix errors also how improve the quality of the code on JavaScript
 
-# Sample
+# Preview
 
 ![Table](./img/sample.gif)
 
