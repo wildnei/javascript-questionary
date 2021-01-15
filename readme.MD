@@ -8,7 +8,7 @@
 
  ❌ Every incorrect answer = -10 seconds
 
- ✔️	Every correct answer gives you 100 points 
+ ✔️	Every correct answer = 100 points 
 
 
 # Technologies used 
@@ -31,6 +31,9 @@
 
 * Improved my ability to find and fix errors also how improve the quality of the code on JavaScript
 
+# Sample
+
+![Table](./img/sample.gif)
 
 ## Important Change Log for errors / bugs while reviewing the code
 
