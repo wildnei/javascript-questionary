@@ -39,7 +39,7 @@
 
 - [x] Added Media Query for mobile version
 
-```
+```css
 @media screen and (max-width: 768px) {
     .choice-container {
         min-width: 20rem;
@@ -55,20 +55,20 @@
 ```
 
 - [x] Fixed number of questions passing the MAX number established 
-```
+```js
 wrong: if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
 correct: if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
 ```
 
 - [x] Added 'clear' button to erase the score
-```
+```js
 $("#clear").on("click", function (event) {
     $("#highScoresList").empty();
 });
 ```
 
 - [x] Added function to clean the storage and make the values not return when refreshing the page 
-```
+```js
 refreshing the page
 $("#clear").on("click", function (event) {
     window.localStorage.clear();
