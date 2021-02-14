@@ -1,3 +1,8 @@
+# Link for deployed application
+
+https://wildnei.github.io/javascript-questionary/
+
+
 # How to play 🎮🎲
 
  📜 This is a TRIVIA GAME
